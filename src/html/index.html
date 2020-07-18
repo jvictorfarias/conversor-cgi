@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Estilização -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor!</title>
+
+    <body>
+      <div
+        class="jumbotron"
+        style="display: flex;align-items: center; justify-content: center"
+      >
+        <h1 style="font-weight: bold">Conversor de decimal para binário!</h1>
+      </div>
+      <div class="container">
+        <form
+          class="text-center border border-light p-5"
+          action="/"
+          method="GET"
+        >
+          <input
+            type="number"
+            class="form-control mb-4"
+            placeholder="Número decimal"
+            min="-2147483647"
+            max="2147483647"
+            name="number"
+          />
+          <button class="btn btn-info btn-block" type="submit">Enviar</button>
+        </form>
+
+        {%RESULT%}
+      </div>
+    </body>
+  </head>
+  <body></body>
+</html>
